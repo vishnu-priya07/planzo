@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import "./Register.css";
 import axios from "axios";
 
@@ -20,14 +20,11 @@ function Register() {
     }
 
     try {
-      const response = await axios.post(
-        `${process.env.REACT_APP_API_URL}/api/auth/register`,
-        {
-          name,
-          email,
-          password,
-        }
-      );
+      const response = await axios.post("http://localhost:5001/api/auth/register", {
+        name,
+        email,
+        password,
+      });
 
       console.log(response.data);
       setStatus("Registration successful!");
@@ -46,9 +43,7 @@ function Register() {
     <div className="register-container">
       <div className="register-box">
         <h2>Create Your Account</h2>
-        <p className="sub-text">
-          Start booking beautiful venues for your next celebration.
-        </p>
+        <p className="sub-text">Start booking beautiful venues for your next celebration.</p>
         <form onSubmit={handleRegister}>
           <div className="input-group">
             <i className="fa-solid fa-user"></i>
@@ -93,8 +88,8 @@ function Register() {
           <button type="submit">Register</button>
         </form>
         {status && <p className="register-status">{status}</p>}
-        <div className="extra-links">
-  <Link to="/login">Already have an account? Login here</Link>
+         <div className="extra-links">
+  <Link to="/login">Don’t have an account? Login here</Link>
 </div>
       </div>
     </div>
