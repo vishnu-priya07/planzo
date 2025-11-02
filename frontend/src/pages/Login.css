@@ -1,0 +1,125 @@
+/* General page setup */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f3e9ff, #e6d4ff); /* soft lavender gradient */
+  margin: 0;
+  padding: 0;
+}
+
+/* Center container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: blur(8px); /* subtle background blur */
+  background: rgba(255, 255, 255, 0.4); /* soft translucent background */
+}
+
+/* Main login box */
+.login-box {
+  background: rgba(255, 255, 255, 0.95); /* near-white glass effect */
+  padding: 55px 65px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(142, 68, 173, 0.12);
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(142, 68, 173, 0.15);
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 10px;
+  color: #4a2c82;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.sub-text {
+  font-size: 15px;
+  margin-bottom: 25px;
+  color: #5e5e5e;
+}
+
+/* Input groups */
+.input-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input-group i {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: #8c6ed3;
+  font-size: 16px;
+}
+
+/* Input fields */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 14px 14px 14px 38px;
+  border: 1.8px solid #d0bdf4;
+  border-radius: 8px;
+  outline: none;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #7a42f4;
+}
+
+/* Login button */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #7a42f4;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #5b2ca1;
+  transform: scale(1.02);
+}
+
+/* Status text */
+.login-status {
+  margin-top: 15px;
+  color: #b00020;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Register link */
+.extra-links {
+  margin-top: 18px;
+}
+
+.extra-links a {
+  color: #7a42f4;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.extra-links a:hover {
+  text-decoration: underline;
+}

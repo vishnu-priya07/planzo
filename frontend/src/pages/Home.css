@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f3f8; /* Soft lavender */
+    color: #333;
+}
+
+main {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+main h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #7e57c2; /* Lavender accent */
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(126, 87, 194, 0.1); /* subtle lavender shadow */
+    width: 280px;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #7e57c2;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(126, 87, 194, 0.2);
+}

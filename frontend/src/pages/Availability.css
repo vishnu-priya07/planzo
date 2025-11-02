@@ -1,0 +1,167 @@
+.availability-page {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #faf8ff;
+  min-height: 90vh;
+}
+
+.page-title {
+  font-size: 2rem;
+  color: #5c3f8e;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.city-input {
+  padding: 10px 15px;
+  border: 1px solid #c8b8f7;
+  border-radius: 8px;
+  width: 280px;
+  outline: none;
+}
+
+.search-btn {
+  background-color: #7e57c2;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #5c3f8e;
+}
+
+.halls-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.hall-card {
+  background-color: white;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hall-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hall-info h3 {
+  color: #4b2c82;
+  margin-bottom: 8px;
+}
+
+.green {
+  color: green;
+  font-weight: 600;
+}
+
+.red {
+  color: red;
+  font-weight: 600;
+}
+
+.check-btn {
+  display: block;
+  margin: 12px auto 0;
+  background-color: #7e57c2;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.check-btn:hover {
+  background-color: #5c3f8e;
+}
+
+/* Booking Form */
+.booking-form {
+  margin-top: 20px;
+  background: #f9f6ff;
+  border-radius: 12px;
+  padding: 18px;
+  border: 1px solid #e0d4ff;
+  animation: fadeIn 0.4s ease;
+}
+
+.booking-form h4 {
+  color: #4b2c82;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.booking-form .form-row {
+  display: flex;
+  gap: 12px;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  border-color: #7e57c2;
+}
+
+.book-btn {
+  width: 100%;
+  background: #7e57c2;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background: #5c3f8e;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

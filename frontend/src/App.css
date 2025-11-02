@@ -1,0 +1,68 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content to push footer to bottom */
+.app-main {
+  flex: 1;
+  padding: 20px 0;
+}
+
+/* Highlighted text (used in Home/About pages) */
+.highlight {
+  color: #7e57c2;
+}
+
+/* Buttons (optional global) */
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+button:hover {
+  opacity: 0.9;
+  transition: 0.3s ease;
+}
+
+/* Inputs (optional global) */
+input, textarea {
+  font-family: inherit;
+  font-size: 14px;
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Responsive container (optional) */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
