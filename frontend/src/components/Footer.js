@@ -16,18 +16,58 @@ function Footer() {
         <div className="footer-section">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="#"><i className="fa-brands fa-facebook"></i> Facebook</a>
-            <a href="#"><i className="fa-brands fa-square-twitter"></i> Twitter</a>
-            <a href="#"><i className="fa-brands fa-instagram"></i> Instagram</a>
-            <a href="#"><i className="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-facebook"></i> Facebook
+            </a>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-square-twitter"></i> Twitter
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-linkedin-in"></i> LinkedIn
+            </a>
           </div>
         </div>
 
         {/* More About Us */}
         <div className="footer-section">
           <h3>More About Us</h3>
-          <p><a href="#">Privacy Policy</a></p>
-          <p><a href="#">Terms & Conditions</a></p>
+          <p>
+            <a
+              href="/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Privacy Policy
+            </a>
+          </p>
+          <p>
+            <a
+              href="/terms-and-conditions"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Terms & Conditions
+            </a>
+          </p>
         </div>
       </div>
     </footer>
