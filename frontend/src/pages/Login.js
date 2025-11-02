@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import "./Login.css";
 import axios from "axios";
 
@@ -66,9 +66,9 @@ function Login() {
 
         {status && <p className="login-status">{status}</p>}
 
-        <div className="extra-links">
-          <a href="/register">Don’t have an account? Register</a>
-        </div>
+     <div className="extra-links">
+  <Link to="/register">Don’t have an account? Register</Link>
+</div>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./Register.css";
 import axios from "axios";
 
@@ -94,8 +94,8 @@ function Register() {
         </form>
         {status && <p className="register-status">{status}</p>}
         <div className="extra-links">
-          <a href="/login">Already have an account? Login here</a>
-        </div>
+  <Link to="/login">Already have an account? Login here</Link>
+</div>
       </div>
     </div>
   );
